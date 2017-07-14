@@ -7,12 +7,6 @@
           = link_to pin.title, pin
         %p.user
           Submitted by
-          \#{pin.user.email}
-        %table
-          %thead
-            %tr
-              %span.glyphicon.glyphicon-eye-open{"aria-hidden" => "true"}
-          %tbody
-            %td= pin.impressions_count
-
-            
+          \\\#{pin.user.email}
+        %span.glyphicon.glyphicon-eye-open{"aria-hidden" => "true"}
+        = pin.impressions_count
