@@ -9,6 +9,7 @@ class PinsController < ApplicationController
   def show
     @pin = Pin.find_by_id!(params[:id])
     impressionist @pin, '', unique: [:ip_address]
+    impressionist @pin, '', unique: [:session_hash]
   end
 
   def new
